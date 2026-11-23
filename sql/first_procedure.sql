@@ -1,3 +1,4 @@
+--creating first procedure 
 create or replace procedure sp_customer_validation(p_customer_id VARCHAR)
 returns varchar
 language sql
@@ -104,6 +105,6 @@ begin
     else
         return 'INVALID: ' || v_errors;
     end if;
-
+---ending
 end;
 $$;
