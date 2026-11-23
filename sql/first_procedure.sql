@@ -1,9 +1,11 @@
---creating first procedure 
+ 
 create or replace procedure sp_customer_validation(p_customer_id VARCHAR)
 returns varchar
 language sql
+comment = 'Managed through GitHub - Version 2.0'
 as
 $$
+--creating first procedure 
 declare
     v_count number;
     v_name varchar;
